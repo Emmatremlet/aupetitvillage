@@ -1,0 +1,14 @@
+.home-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    padding:30px;
+}
+
+.image-favicon{
+    width: 200px;
+}

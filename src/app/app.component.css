@@ -1,0 +1,55 @@
+nav {
+    background-color: #ffd90b;
+    padding :5px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width:80px;
+
+}
+
+a{
+    padding : 0 30px;
+    color : #151217;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+    width:100px;
+}
+
+.moncompte{
+    width:90px;
+}
+
+.panier{
+    width:30px;
+}
+
+.compte{
+    width: 30px;
+    padding-right : 40px;
+}
+
+.compte:hover{
+    opacity:0.5;
+    cursor:pointer;
+}
+
+.panier:hover{
+    opacity:0.5;
+    cursor:pointer;
+}
