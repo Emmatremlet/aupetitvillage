@@ -1,3 +1,34 @@
+@font-face {
+    font-family: "Bubbleboddy neue";
+    src: url("../assets/Fonts/bubbleboddy_neue/bubbleboddyneue-regular-trial.ttf");
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../assets/Fonts/Comfortaa/static/Comfortaa-Medium.ttf");
+}
+
+.main-app{
+    font-family: "Comfortaa", sans-serif;
+
+}
+
+h1{
+    padding:30px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+h2{
+    padding:30px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+h3{
+    padding:30px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+
 nav {
     background-color: #ffd90b;
     padding :5px 60px;

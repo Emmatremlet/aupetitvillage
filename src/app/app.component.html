@@ -1,20 +1,22 @@
-<nav>
-  <img class="logo" src={{logo}} alt="Chapeau d'astérix avec au dessus le nom de l'entreprise">
-  <div class="lien">
-    <a routerLink="/">Accueil</a>
-    <a routerLink="/products">Produits</a>
-    <a routerLink="/apropos">A propos</a>
-  </div>
-  <div class="logo">
-    <div class="moncompte">
-      <img class="compte" src={{compte}} alt="icone d'astérix">
-      <p class="text-compte">Mon compte</p>
+<div class="main-app">
+  <nav>
+    <img class="logo" src={{logo}} alt="Chapeau d'astérix avec au dessus le nom de l'entreprise">
+    <div class="lien">
+      <a routerLink="/">Accueil</a>
+      <a routerLink="/contact">Contact</a>
+      <a routerLink="/apropos">A propos</a>
     </div>
-    <div class="monpanier">
-      <img class="panier" src={{panier}} alt="icone d'un panier">
-      <p class="text-panier">Mon panier</p>
+    <div class="logo">
+      <div class="moncompte">
+        <img class="compte" src={{compte}} alt="icone d'astérix">
+        <p class="text-compte">Mon compte</p>
+      </div>
+      <div class="monpanier">
+        <img class="panier" src={{panier}} alt="icone d'un panier">
+        <p class="text-panier">Mon panier</p>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+</div>

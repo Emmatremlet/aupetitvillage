@@ -1,0 +1,124 @@
+.main-contact{
+    line-height: 20px;
+}
+
+h1{
+    padding:30px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+h2{
+    padding:30px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+h3{
+    padding:30px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+button {
+    font-family: "Edu_Sa_Beginner", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+#contact_form {
+    line-height: 3;
+    margin-top: 70px;
+    line-height: 4;
+}
+
+#id {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+#first-name {
+    order: 1;
+}
+
+#last-name {
+    order: 2;
+}
+
+#submit {
+    background-color: #DA001E;
+    color: #FDD90B;
+    font-size: 16px;
+    margin-left: 89%;
+    margin-top: 30px;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    cursor: pointer;
+
+}
+
+#comments_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50%;
+}
+
+#comments_label {
+    order: 1;
+}
+
+span {
+    order: 2;
+}
+
+input {
+    border-radius: 10px;
+    height: 35px;
+    width: 200px;
+    padding: 5px;
+    font-size: medium;
+    border-color: black;
+    margin-left: 20px;
+    background-color: #fff;
+}
+
+#email_box {
+    width: 400px;
+}
+
+#object_box {
+    margin-left: 85px;
+    width: 400px;
+}
+
+textarea {
+    order: 3;
+    width: 1000px;
+    height: 200px;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+}
+.alerte{
+    background-color: none;
+    color : #151217;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 18px;
+    margin-left: 28%;
+    width: 400px;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid;
+    border-color:#151217;
+    
+}

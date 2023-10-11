@@ -1,3 +1,7 @@
+.main-home{
+    line-height: 20px;
+}
+
 .home-description{
     display: flex;
     flex-direction: row;
@@ -7,6 +11,17 @@
 
 h1{
     padding:30px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+h2{
+    padding:30px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+h3{
+    padding:30px;
+    font-family: "Bubbleboddy neue", sans-serif;
 }
 
 .image-favicon{
