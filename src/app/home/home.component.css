@@ -1,29 +1,100 @@
-.main-home{
+.main-home {
     line-height: 20px;
+    padding: 50px;
 }
 
-.home-description{
+h1 {
+    padding: 30px;
+    font-size:50px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+h2 {
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+h3 {
+    font-family: "Bubbleboddy neue", sans-serif;
+    color: #151217;
+}
+
+.home-description {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-h1{
-    padding:30px;
-    font-family: "Bubbleboddy neue", sans-serif;
+.image-description {
+    width: 550px;
+    padding: 30px;
+    border-radius: 200px;
 }
 
-h2{
-    padding:30px;
-    font-family: "Bubbleboddy neue", sans-serif;
+.description-entreprise{
+    width:500px;
 }
 
-h3{
-    padding:30px;
-    font-family: "Bubbleboddy neue", sans-serif;
+.barre {
+    box-shadow: none;
+    height: 2px;
+    background-color: #DA001E;
+    border: none;
+    width: 600px;
+    margin: 70px auto;
 }
 
-.image-favicon{
-    width: 200px;
+.titre-catalogue {
+    text-align: center;
+    font-size: 35px;
+    margin: 40px;
+}
+
+
+.catalogue {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    align-items: baseline;
+}
+
+.image-produit {
+    width: 300px;
+}
+
+.image-idefix{
+    height: 400px;
+}
+
+.figurine {
+    background-color: #fce3c9;
+    text-decoration: none;
+    max-width: 400px;
+    font-size: 18px;
+    padding: 20px;
+    border: solid;
+    border-color: #FDD90B;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    flex-basis: auto;
+}
+
+.figurine:hover {
+    box-shadow: 7px 7px 10px 1px #da001d41;
+    cursor: pointer;
+}
+
+.prix {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #151217;
 }

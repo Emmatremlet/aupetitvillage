@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  logo:any ="../assets/favicon.png"
+  AsterixObelix: any = "../assets/asterixobelix.jpg"
+  FigurineAsterix: any = "../assets/figurine-asterix.jpeg"
+  FigurineObelix: any = "../assets/figurine-obelix.jpeg"
+  FigurineIdefix: any = "../assets/figurine-idefix.webp"
 }

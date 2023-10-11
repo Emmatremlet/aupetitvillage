@@ -8,30 +8,29 @@
     src: url("../assets/Fonts/Comfortaa/static/Comfortaa-Medium.ttf");
 }
 
-.main-app{
+.main-app {
     font-family: "Comfortaa", sans-serif;
-
 }
 
-h1{
-    padding:30px;
+h1 {
+    padding: 30px;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
-h2{
-    padding:30px;
+h2 {
+    padding: 30px;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
-h3{
-    padding:30px;
+h3 {
+    padding: 30px;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
 
 nav {
     background-color: #ffd90b;
-    padding :5px 60px;
+    padding: 5px 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,13 +38,13 @@ nav {
 }
 
 .logo {
-    width:80px;
+    width: 80px;
 
 }
 
-a{
-    padding : 0 30px;
-    color : #151217;
+a {
+    padding: 0 30px;
+    color: #151217;
     text-decoration: none;
     font-size: 20px;
 }
@@ -54,33 +53,33 @@ a:hover {
     text-decoration: underline;
 }
 
-.logo{
-    display:flex;
+.logo {
+    display: flex;
     flex-direction: row;
-    align-items: center;
     padding-right: 20px;
-    width:100px;
+    width: 100px;
 }
 
-.moncompte{
-    width:90px;
+.panier {
+    width: 40px;
+    padding: 0 40px;
 }
 
-.panier{
-    width:30px;
+.compte {
+    width: 40px;
+    padding: 0;
 }
 
-.compte{
-    width: 30px;
-    padding-right : 40px;
+.compte:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
-.compte:hover{
-    opacity:0.5;
-    cursor:pointer;
+.panier:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
-.panier:hover{
-    opacity:0.5;
-    cursor:pointer;
+p {
+    width: 110px;
 }
