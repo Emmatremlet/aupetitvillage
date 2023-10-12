@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./apropos.component.css']
 })
 export class AproposComponent {
-
+  Hug: any = "../assets/hugsaterixobelix.jpeg"
+  logo: any = "../assets/logo.png";
 }
