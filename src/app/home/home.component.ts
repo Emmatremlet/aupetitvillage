@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../products.service';
+import { Product } from '../product.model';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,19 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   AsterixObelix: any = "../assets/asterixobelix.jpg"
-  FigurineAsterix: any = "../assets/figurine-asterix.jpeg"
-  FigurineObelix: any = "../assets/figurine-obelix.jpeg"
-  FigurineIdefix: any = "../assets/figurine-idefix.webp"
+
+  products: Product[];
+
+  constructor(private productService: ProductService) {
+    this.products = productService.getProducts();
+  }
+
+  sortProductsByNameAscending() {
+    this.products = this.productService.sortProductsByNameAscending();
+  }
+
+  sortProductsByNameDescending() {
+    this.products = this.productService.sortProductsByNameDescending();
+  }
+  
 }

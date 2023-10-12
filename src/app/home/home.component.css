@@ -54,6 +54,14 @@ h3 {
     margin: 40px;
 }
 
+select {
+    position: relative;
+    left: 78%;
+    width: 230px;
+    height: 30px;
+    font-size:14px;
+}
+
 
 .catalogue {
     cursor: default;
@@ -70,7 +78,7 @@ h3 {
     width: 300px;
 }
 
-.image-idefix {
+.figurine img {
     height: 400px;
 }
 

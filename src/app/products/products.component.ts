@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Product } from '../product.model';
+import { ProductService } from '../products.service';
 
 @Component({
   selector: 'app-products',
@@ -6,10 +8,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
-  @Input() title :string = ''
-  @Input() description :string = ''
-  @Input() materiau: string = ''
-  @Input() hauteur :string = ''
-  @Input() prix :string = ''
-  @Input() disponibilite :string = ''
+  products: Product[];
+
+  constructor(private productService: ProductService) {
+    this.products = productService.getProducts();
+  }
 }
+
