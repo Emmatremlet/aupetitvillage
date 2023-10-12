@@ -1,4 +1,11 @@
-body{
-    padding :0;
+.main {
+    padding: 0;
+    margin: 0;
     background-color: #f9d0a3;
+    width: 100vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
 }

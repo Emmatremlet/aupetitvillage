@@ -177,6 +177,9 @@ a:hover {
     background-color: white;
     color: white;
     padding: 20px;
+    border:solid;
+    border-color:#151217;
+    border-width: 2px;
 }
 
 .lien-copyright {
