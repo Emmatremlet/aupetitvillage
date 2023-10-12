@@ -33,6 +33,9 @@ h3 {
 }
 
 h4 {
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
     text-decoration: none;
     font-family: "Bubbleboddy neue", sans-serif;
 }
@@ -49,17 +52,22 @@ nav {
 
 .logo {
     width: 80px;
-
 }
 
-a {
+.logo:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.router {
     padding: 0 30px;
     color: #151217;
     text-decoration: none;
     font-size: 20px;
 }
 
-a:hover {
+.router:hover {
+    cursor: pointer;
     text-decoration: underline;
     opacity: 0.5;
 }
@@ -95,13 +103,21 @@ p {
     width: 110px;
 }
 
+a:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
 
 .footer {
-    padding: 30px;
+    background-color: #151217;
+    color: white;
+    padding: 10px 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
+    gap: 100px;
 }
 
 .footer img {
@@ -115,7 +131,11 @@ p {
 }
 
 .infos {
+    width: 30%;
     text-align: left;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .social-networks {
@@ -123,28 +143,46 @@ p {
     margin: 0;
 }
 
+.lien-categories {
+    color: white;
+    text-decoration: none;
+
+}
+
+.lien-page {
+    color: white;
+    text-decoration: none;
+}
+
 .link {
-    color: black;
+    width: 30%;
+    margin-left: 0;
+    padding-left: 0;
+    color: white;
     text-align: left;
     text-decoration: none;
+    line-height: 30px;
 }
 
 
 .categories {
+    width: 30%;
     text-align: left;
     text-decoration: none;
-    color: black;
+    color: white;
+    line-height: 30px;
 }
 
 .copyright {
-    background-color: #1e1E1E;
+    background-color: white;
     color: white;
     padding: 20px;
 }
 
-.copyright p {
+.lien-copyright {
+    margin: 40%;
     text-align: center;
-    color: white;
+    color: #151217;
     text-decoration: none;
 }
 

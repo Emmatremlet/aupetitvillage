@@ -2,9 +2,9 @@
   <nav>
     <img class="logo" src={{logo}} alt="Chapeau d'astérix avec au dessus le nom de l'entreprise">
     <div class="lien">
-      <a routera="/">Accueil</a>
-      <a routera="/contact">Contact</a>
-      <a routera="/apropos">A propos</a>
+      <a class="router" routera="/">Accueil</a>
+      <a class="router" routera="/contact">Contact</a>
+      <a class="router" routera="/apropos">A propos</a>
     </div>
     <div class="logo">
       <img class="compte" src={{compte}} alt="icone d'astérix">
@@ -14,6 +14,9 @@
 
   <router-outlet></router-outlet>
 
+  <br>
+  <br>
+
   <div class="footer">
     <div class="infos">
       <h4>Au Petit Village</h4>
@@ -22,32 +25,32 @@
         Téléphone : 06 20 30 40 50
       </p>
       <div class="social-networks">
-        <a href="https://github.com/Emmatremlet">
+        <a class="lien-social-networks" href="https://github.com/Emmatremlet">
           <img src={{Instagram}} alt="icône Instagram" class="instagram" />
         </a>
-        <a href="https://twitter.com/emmatremlet">
+        <a class="lien-social-networks" href="https://twitter.com/emmatremlet">
           <img src={{Linkedin}} alt="Icône Linkedin" class="linkedin" />
         </a>
-        <a href="https://www.aedin.com/in/emma-tremlet/">
+        <a class="lien-social-networks" href="https://www.aedin.com/in/emma-tremlet/">
           <img src={{Facebook}} alt="Icône facebook" class="facebook" />
         </a>
       </div>
     </div>
     <div class="link">
       <h4>Liens utiles</h4>
-      <a routerLink="/">Accueil</a><br />
-      <a routerLink="/apropos">À propos</a><br />
-      <a routerLink="/contact">Me contacter</a><br />
-      <a routerLink="/mentionslegales">Mentions légales</a><br />
+      <a class="lien-page" routerLink="/">Accueil</a><br />
+      <a class="lien-page" routerLink="/apropos">À propos</a><br />
+      <a class="lien-page" routerLink="/contact">Me contacter</a><br />
+      <a class="lien-page" routerLink="/mentionslegales">Mentions légales</a><br />
     </div>
     <div class="categories">
       <h4>Catégories figurines</h4>
-      <a routerLink="/">Astérix</a><br />
-      <a routerLink="/">Obélix</a><br />
-      <a routerLink="/">Idéfix</a><br />
+      <a class="lien-categories" routerLink="/">Astérix</a><br />
+      <a class="lien-categories" routerLink="/">Obélix</a><br />
+      <a class="lien-categories" routerLink="/">Idéfix</a><br />
     </div>
   </div>
   <div class="copyright">
-    <a routerLink="/">© Designed by Emma Tremlet</a>
+    <a class="lien-copyright" routerLink="/">© Designed by Emma Tremlet</a>
   </div>
 </div>
