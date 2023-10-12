@@ -1,39 +1,33 @@
 import { Component } from '@angular/core';
-// import emailjs from 'emailjs-com';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { NgForm, NgModel} from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
+  
 export class ContactComponent {
-//   showAlert: boolean = true;
-//     function closeAlert(showAlert: boolean): boolean {
-//   return showAlert = false;
-// }
-// function sendEmail(e) {
-//   try {
-//     emailjs.sendForm('service_ptlbqr8', 'template_16vskto', e.target,
-//       '-zAyczA1-KABOJJnO', {
-//       firstName: firstName,
-//       lastName: lastName,
-//       email: email,
-//       object: object,
-//       comments: this.comments
-//     })
+  showAlert: boolean = false;
 
-//     this.showAlert = true,
-//       setTimeout(this.closeAlert, 3000);
-
-//   } catch (error) {
-//     console.log({ error })
-//   }
-//   this.firstName = '',
-//     this.lastName = '',
-//     this.email = '',
-//     this.object = '',
-//     this.comments = ''
-// },
+  toggleShowAlert() {
+    this.showAlert = !this.showAlert;
   }
+
+  public sendEmail(e: Event) {
+    e.preventDefault();
+    emailjs.sendForm('service_ptlbqr8', 'template_16vskto', e.target as HTMLFormElement, '-zAyczA1-KABOJJnO')
+      .then((result: EmailJSResponseStatus) => {
+        console.log(result.text);
+        alert("SUCCESS!");
+        setTimeout(this.toggleShowAlert, 3000);
+      }, (error) => {
+        console.log(error.text);
+        alert("FAILED...")
+      });
+  }
+}
 
 
