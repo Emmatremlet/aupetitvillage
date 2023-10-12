@@ -2,9 +2,9 @@
   <nav>
     <img class="logo" src={{logo}} alt="Chapeau d'astérix avec au dessus le nom de l'entreprise">
     <div class="lien">
-      <a routerLink="/">Accueil</a>
-      <a routerLink="/contact">Contact</a>
-      <a routerLink="/apropos">A propos</a>
+      <a routera="/">Accueil</a>
+      <a routera="/contact">Contact</a>
+      <a routera="/apropos">A propos</a>
     </div>
     <div class="logo">
       <img class="compte" src={{compte}} alt="icone d'astérix">
@@ -13,4 +13,41 @@
   </nav>
 
   <router-outlet></router-outlet>
+
+  <div class="footer">
+    <div class="infos">
+      <h4>Au Petit Village</h4>
+      <p class="adresse-postale">40 rue Laure Diebold <br />
+        69009 Lyon, France <br />
+        Téléphone : 06 20 30 40 50
+      </p>
+      <div class="social-networks">
+        <a href="https://github.com/Emmatremlet">
+          <img src={{Instagram}} alt="icône Instagram" class="instagram" />
+        </a>
+        <a href="https://twitter.com/emmatremlet">
+          <img src={{Linkedin}} alt="Icône Linkedin" class="linkedin" />
+        </a>
+        <a href="https://www.aedin.com/in/emma-tremlet/">
+          <img src={{Facebook}} alt="Icône facebook" class="facebook" />
+        </a>
+      </div>
+    </div>
+    <div class="link">
+      <h4>Liens utiles</h4>
+      <a routerLink="/">Accueil</a><br />
+      <a routerLink="/apropos">À propos</a><br />
+      <a routerLink="/contact">Me contacter</a><br />
+      <a routerLink="/mentionslegales">Mentions légales</a><br />
+    </div>
+    <div class="categories">
+      <h4>Catégories figurines</h4>
+      <a routerLink="/">Astérix</a><br />
+      <a routerLink="/">Obélix</a><br />
+      <a routerLink="/">Idéfix</a><br />
+    </div>
+  </div>
+  <div class="copyright">
+    <a routerLink="/">© Designed by Emma Tremlet</a>
+  </div>
 </div>

@@ -10,20 +10,30 @@
 
 .main-app {
     font-family: "Comfortaa", sans-serif;
+    text-decoration: none !important;
+    color: #151217;
 }
 
 h1 {
     padding: 30px;
+    text-decoration: none;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
 h2 {
     padding: 30px;
+    text-decoration: none;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
 h3 {
     padding: 30px;
+    text-decoration: none;
+    font-family: "Bubbleboddy neue", sans-serif;
+}
+
+h4 {
+    text-decoration: none;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
@@ -51,6 +61,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    opacity: 0.5;
 }
 
 .logo {
@@ -82,4 +93,62 @@ a:hover {
 
 p {
     width: 110px;
+}
+
+
+.footer {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer img {
+    width: 30px;
+    margin: 10px;
+    opacity: 1;
+}
+
+.footer img:hover {
+    opacity: 0.5;
+}
+
+.infos {
+    text-align: left;
+}
+
+.social-networks {
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    color: black;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+.categories {
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    background-color: #1e1E1E;
+    color: white;
+    padding: 20px;
+}
+
+.copyright p {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.adresse-postale {
+    text-align: left;
+    width: 500px;
 }

@@ -3,17 +3,8 @@
 }
 
 h1{
-    padding:30px;
-    font-family: "Bubbleboddy neue", sans-serif;
-}
-
-h2{
-    padding:30px;
-    font-family: "Bubbleboddy neue", sans-serif;
-}
-
-h3{
-    padding:30px;
+    text-align: center;
+    padding-top:80px;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
@@ -23,13 +14,15 @@ button {
     letter-spacing: 2px;
 }
 
-#contact_form {
+.contact_form {
+    width : 70%;
+    margin: 70px auto;
+    padding: 0 auto;
     line-height: 3;
-    margin-top: 70px;
     line-height: 4;
 }
 
-#id {
+.id {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -37,17 +30,10 @@ button {
     justify-content: flex-start;
 }
 
-#first-name {
-    order: 1;
-}
-
-#last-name {
-    order: 2;
-}
-
-#submit {
+.submit {
     background-color: #DA001E;
     color: #FDD90B;
+    border:none;
     font-size: 16px;
     margin-left: 89%;
     margin-top: 30px;
@@ -56,12 +42,12 @@ button {
     border-radius: 10px;
 }
 
-#submit:hover {
+.submit:hover {
     cursor: pointer;
 
 }
 
-#comments_block {
+.comments_block {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -70,7 +56,7 @@ button {
     gap: 50%;
 }
 
-#comments_label {
+.comments_label {
     order: 1;
 }
 
@@ -89,11 +75,11 @@ input {
     background-color: #fff;
 }
 
-#email_box {
+.email_box {
     width: 400px;
 }
 
-#object_box {
+.object_box {
     margin-left: 85px;
     width: 400px;
 }

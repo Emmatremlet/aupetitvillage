@@ -6,7 +6,8 @@
             alt="casque d'astérix avec le nom de l'entreprise au dessus">
         <div class="description">
             <h2 class="notre-entreprise">Notre entreprise</h2>
-            <p class="description-entreprise">Au Petit Village est une entreprise spécialisée dans la vente de figurines d'Astérix et Obélix, deux des
+            <p class="description-entreprise">Au Petit Village est une entreprise spécialisée dans la vente de figurines
+                d'Astérix et Obélix, deux des
                 personnages emblématiques de la bande dessinée française créée par René Goscinny et Albert Uderzo. Notre
                 entreprise est dédiée à la célébration de l'univers passionnant des aventures de ces Gaulois intrépides.
             </p>
@@ -18,26 +19,41 @@
     <h2 class="titre-catalogue"> Notre catalogue </h2>
 
     <div class="catalogue">
-        <a routerLink="/products" class="figurine">
+        <div class="figurine">
             <img src={{FigurineAsterix}}
                 alt="figurine d'Astérix vétu de sa tenue traditionnelle, coiffé de son casque ailé et boit sa potion magique"
                 class="image-produit">
             <h3 class="title-asterix">Astérix Le Gaulois</h3>
             <p class="prix">24,99€</p>
-        </a>
-        <a routerLink="/products" class="figurine">
+            <a routerLink="/products" class="div-voir">
+                <button class="voir" >
+                    Voir plus
+                </button>
+            </a>
+        </div>
+        <div class="figurine">
             <img src={{FigurineObelix}}
                 alt="figurine d'Astérix vétu de sa tenue traditionnelle, coiffé de son casque ailé et boit sa potion magique"
                 class="image-produit">
             <h3 id="title-asterix">Obélix Le Gaulois</h3>
             <p class="prix">26,99€</p>
-        </a>
-        <a routerLink="/products" class="figurine">
+            <a routerLink="/products" class="div-voir">
+                <button class="voir">
+                    Voir plus
+                </button>
+            </a>
+        </div>
+        <a routera="/products" class="figurine">
             <img src={{FigurineIdefix}}
                 alt="figurine d'Astérix vétu de sa tenue traditionnelle, coiffé de son casque ailé et boit sa potion magique"
                 class="image-produit image-idefix">
             <h3 id="title-asterix">Idéfix Le Chien</h3>
             <p class="prix">12,99€</p>
+            <a routerLink="/products" class="div-voir">
+                <button class="voir">
+                    Voir plus
+                </button>
+            </a>
         </a>
     </div>
 

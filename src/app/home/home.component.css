@@ -54,6 +54,7 @@ h3 {
 
 
 .catalogue {
+    cursor: default;
     margin-top: 70px;
     display: flex;
     flex-direction: row;
@@ -72,6 +73,7 @@ h3 {
 }
 
 .figurine {
+    cursor: default !important;
     background-color: #fce3c9;
     text-decoration: none;
     max-width: 400px;
@@ -80,7 +82,6 @@ h3 {
     border: solid;
     border-color: #FDD90B;
     border-radius: 10px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,6 +92,23 @@ h3 {
 .figurine:hover {
     box-shadow: 7px 7px 10px 1px #da001d41;
     cursor: pointer;
+}
+
+.div-voir{
+    margin: auto;
+}
+
+.voir {
+    cursor:pointer;
+    background-color: #DA001E;
+    color: #FDD90B;
+    box-shadow: none;
+    border:none;
+    font-size: 16px;
+    margin-top: 30px;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
 }
 
 .prix {
