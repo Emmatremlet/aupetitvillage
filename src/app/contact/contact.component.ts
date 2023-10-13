@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import { NgForm, NgModel} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
@@ -10,10 +10,17 @@ import { NgForm, NgModel} from '@angular/forms';
 })
   
 export class ContactComponent {
-  showAlert: boolean = false;
 
-  toggleShowAlert() {
-    this.showAlert = !this.showAlert;
+  contactForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.contactForm = this.formBuilder.group({
+      firstname: ['', Validators.required],
+      lastname: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      object: ['', Validators.required],
+      comments: ['', Validators.required],
+    });
   }
 
   public sendEmail(e: Event) {
@@ -22,11 +29,11 @@ export class ContactComponent {
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
         alert("SUCCESS!");
-        setTimeout(this.toggleShowAlert, 3000);
       }, (error) => {
         console.log(error.text);
         alert("FAILED...")
       });
+    this.contactForm.reset();
   }
 }
 

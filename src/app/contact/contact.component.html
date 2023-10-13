@@ -2,34 +2,31 @@
 <div class="main-contact">
     <h1>Contactez-nous !</h1>
 
-    <form (ngSubmit)="sendEmail($event)" method="post" class="contact_form">
+    <form [formGroup]="contactForm" (ngSubmit)="sendEmail($event)" method="post" class="contact_form">
         <div class="id">
             <div class="first-name">
                 <label for="first-name_box" class="first-name_label">Prénom :</label>
-                <input type="text" class="first-name_box" name="firstName" placeholder="Votre prénom" required>
+                <input type="text" class="first-name_box" name="firstName" formControlName="firstname" placeholder="Votre prénom" required>
             </div>
             <div class="last-name">
                 <label for="last-name_box" id="last-name_label">Nom :</label>
-                <input type="text" class="last-name_box" name="lastName" placeholder="Votre nom" ngModel required>
+                <input type="text" class="last-name_box" name="lastName" formControlName="lastname" placeholder="Votre nom" required>
             </div>
         </div>
         <div class="email">
             <label for="email_box" class="email_label">Adresse e-mail :</label>
-            <input type="email" class="email_box" name="email" placeholder="Votre email" key="email-input" ngModel required>
+            <input type="email" class="email_box" name="email" formControlName="email" placeholder="Votre email" key="email-input" required>
         </div>
         <div class="object">
             <label for="object_box" class="object_label"> Objet :</label>
-            <input type="text" class="object_box" name="object" placeholder="Le sujet de votre message" ngModel required>
+            <input type="text" class="object_box" name="object" formControlName="object" placeholder="Le sujet de votre message" required>
         </div>
         <div class="comments_block">
             <label class="comments_label" for="comments">Commentaire : </label>
             <span class="comments-max">Max. 500 caractères</span>
-            <textarea class="comments" name="comments" placeholder="Votre message" rows="4" maxlength="500" ngModel
+            <textarea class="comments" name="comments" formControlName="comments" placeholder="Votre message" rows="4" maxlength="500"
                 required></textarea>
         </div>
-        <p class="alerte" *ngIf=showAlert>
-            Votre message est parti !
-        </p>
         <div class="submit_block">
             <button type="submit" class="submit">
                 Envoyer
