@@ -55,13 +55,46 @@ h3 {
 }
 
 select {
-    position: relative;
-    left: 78%;
     width: 230px;
     height: 30px;
-    font-size:14px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
+.tri-recherche {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50%;
+}
+
+.div-recherche {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.recherche {
+    background-color: #f3d840a2;
+    padding: 5px;
+    width: 230px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid;
+    border-color: #DA001E;
+    border-width: 1px;
+    font-size: 14px;
+}
+
+.loupe {
+    width: 30px;
+    height: auto;
+}
+
+.recherche::placeholder {
+    color: #DA001E;
+}
 
 .catalogue {
     cursor: default;

@@ -18,12 +18,20 @@
 
     <h2 class="titre-catalogue"> Notre catalogue </h2>
 
-    <div class="tri" for="sortProducts">
-        <select style="background-color: #FDD90B; color: #DA001E " class="tri-produits" (change)="sortProducts($event)">
-            <option value="">Choisissez une option</option>
-            <option value="asc" >Tri croissant</option>
-            <option value="desc" >Tri décroissant</option>
-        </select>
+    <div class="tri-recherche">
+        <div class="div-recherche">
+            <input type="text" class="recherche" placeholder="Rechercher par nom" (input)="searchProducts($event)">
+            <img class="loupe" src={{Loupe}} alt="icone de loupe">
+        </div>
+
+        <div class="tri" for="sortProducts">
+            <select style="background-color: #FDD90B; color: #DA001E " class="tri-produits"
+                (change)="sortProducts($event)">
+                <option value="">Choisissez une option</option>
+                <option value="asc">Tri croissant</option>
+                <option value="desc">Tri décroissant</option>
+            </select>
+        </div>
     </div>
     <div class="catalogue">
         <div class="liste" *ngFor="let product of sortedProducts">
