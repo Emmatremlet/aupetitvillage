@@ -18,13 +18,15 @@
 
     <h2 class="titre-catalogue"> Notre catalogue </h2>
 
-    <select style="background-color: #FDD90B; color: #DA001E " class="tri-produits">
-        <option value="">Sélectionner une option de tri</option>
-        <option value="croissant" (click)="sortProductsByNameAscending()">Tri croissant</option>
-        <option value="decroissant" (click)="sortProductsByNameDescending()">Tri décroissant</option>
-    </select>
+    <div class="tri" for="sortProducts">
+        <select style="background-color: #FDD90B; color: #DA001E " class="tri-produits" (change)="sortProducts($event)">
+            <option value="">Choisissez une option</option>
+            <option value="asc" >Tri croissant</option>
+            <option value="desc" >Tri décroissant</option>
+        </select>
+    </div>
     <div class="catalogue">
-        <div class="liste" *ngFor="let product of products">
+        <div class="liste" *ngFor="let product of sortedProducts">
             <div class="figurine">
                 <img src={{product.image}} alt="figurine du monde d'Astérix et d'Obélix" class="image-produit">
                 <h3 class="title-asterix">{{product.name}}</h3>
