@@ -46,11 +46,8 @@
     <div class="categories">
       <h4>Catégories figurines</h4>
       <div *ngFor="let product of products">
-        <a [routerLink]="['/ficheproduit', product.id]">{{ product.name }}</a>
+        <a class="lien-categories"routerLink="['/ficheproduit', product.id]">{{ product.name }}</a>
       </div>
-      <a class="lien-categories">Astérix</a><br />
-      <a class="lien-categories">Obélix</a><br />
-      <a class="lien-categories">Idéfix</a><br />
     </div>
   </div>
   <div class="copyright">

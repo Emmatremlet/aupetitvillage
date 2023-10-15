@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Product } from './product.model';
+import { ProductService } from './products.service';
 
 
 @Component({
@@ -13,5 +15,11 @@ export class AppComponent {
   compte: any = "../assets/astérix.png";
   Facebook: any = "../assets/facebook.png";
   Instagram: any = "../assets/instagram.png";
-  Linkedin: any ="../assets/linkedin.png"
+  Linkedin: any = "../assets/linkedin.png"
+  
+  products: Product[];
+
+  constructor(private productService: ProductService) {
+    this.products = productService.getProducts();
+  }
 }

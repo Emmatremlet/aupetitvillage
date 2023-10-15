@@ -52,5 +52,9 @@ export class ProductService {
   sortProductsByNameDescending() {
     return(this.products.sort((a, b)=>b.name.localeCompare(a.name)))
   }
+  
+  getProductById(id: number): Product | undefined {
+    return this.products.find(product => product.id === id);
+  }
 }
 

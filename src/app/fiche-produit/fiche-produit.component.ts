@@ -16,14 +16,15 @@ export class FicheProduitComponent implements OnInit{
   @Input() prix :string = ''
   @Input() disponibilite: string = ''
 
-  product: Product [];
+  product: Product | undefined;
 
-  constructor(private route: ActivatedRoute, private productService: ProductService) {
-    this.product = productService.getProducts();
-  }
+  constructor(private route: ActivatedRoute, private productService: ProductService) {}
 
   ngOnInit(): void {
-    const productId = +this.route.snapshot.paramMap.get('id');
-    this.product = this.productService.getProducts(productId);
+    const idParam = this.route.snapshot.paramMap.get('id');
+    if (idParam !== null) {
+      const productId = +idParam;
+      this.product = this.productService.getProductById(productId);
+    }
   }
 }

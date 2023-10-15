@@ -108,6 +108,14 @@ select {
     align-items: baseline;
 }
 
+.liste a {
+    text-decoration: none;
+}
+
+.figurine {
+    cursor: pointer;
+}
+
 .image-produit {
     width: 300px;
 }
