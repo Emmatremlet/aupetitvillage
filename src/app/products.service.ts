@@ -11,6 +11,7 @@ export class ProductService {
 
   private products: Product[] = [
     {
+      id: 1,
       name: 'Astérix Le Gaulois',
       image: this.FigurineAsterix,
       price: 24.99,
@@ -20,6 +21,7 @@ export class ProductService {
       disponibilite: 'En stock'
     },
     {
+      id: 2,
       name: 'Obélix Le Gaulois',
       image: this.FigurineObelix,
       price: 26.99,
@@ -29,6 +31,7 @@ export class ProductService {
       disponibilite: 'En stock'
     },
     {
+      id: 3,
       name: 'Idéfix Le Chien',
       image: this.FigurineIdefix,
       price: 12.99,

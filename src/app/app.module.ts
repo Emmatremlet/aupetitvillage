@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,8 +25,14 @@ import { FicheProduitComponent } from './fiche-produit/fiche-produit.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+    ReactiveFormsModule,
+    FormsModule,
+    CommonModule
+  ]
 })
 export class AppModule { }
