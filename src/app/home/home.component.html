@@ -35,18 +35,16 @@
     </div>
     <div class="catalogue">
         <div class="liste" *ngFor="let product of sortedProducts">
-            <a routerLink="['/ficheproduit', product.id]">
                 <div class="figurine">
                     <img src={{product.image}} alt="figurine du monde d'Astérix et d'Obélix" class="image-produit">
                     <h3 class="title-asterix">{{product.name}}</h3>
                     <p class="prix">{{product.price}}€</p>
-                    <a routerLink="/products" class="div-voir">
+                    <a routerLink="/ficheproduit/{{product.id}}" class="div-voir">
                         <button class="voir">
                             Voir plus
                         </button>
                     </a>
                 </div>
-            </a>
         </div>
     </div>
 </div>

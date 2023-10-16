@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from './product.model';
 import { ProductService } from './products.service';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -19,7 +20,18 @@ export class AppComponent {
   
   products: Product[];
 
-  constructor(private productService: ProductService) {
+  product: Product | undefined;
+  
+
+  constructor(private productService: ProductService, private route: ActivatedRoute) {
     this.products = productService.getProducts();
+  }
+
+  ngOnInit(): void {
+    const idParam = this.route.snapshot.paramMap.get('id');
+    if (idParam !== null) {
+      const productId = +idParam;
+      this.product = this.productService.getProductById(productId);
+    }
   }
 }

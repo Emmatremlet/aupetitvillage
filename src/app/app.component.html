@@ -46,7 +46,7 @@
     <div class="categories">
       <h4>Catégories figurines</h4>
       <div *ngFor="let product of products">
-        <a class="lien-categories"routerLink="['/ficheproduit', product.id]">{{ product.name }}</a>
+        <a class="lien-categories" routerLink="/ficheproduit/{{product.id}}">{{ product.name }}</a>
       </div>
     </div>
   </div>

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProductService } from '../products.service';
 import { Product } from '../product.model';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,13 +11,14 @@ import { Product } from '../product.model';
 export class HomeComponent {
   AsterixObelix: any = "../assets/asterixobelix.jpg";
   Loupe: any = "../assets/loupe.png"
-
-  products: Product[];
+  @Input() id: number = 0;
+  products: Product [];
   sortedProducts: Product[];
   sortDirection: string = 'asc';
   searchTerm: string = '';
+  product: Product | undefined;
 
-  constructor(private productService: ProductService) {
+  constructor(private productService: ProductService, private route: ActivatedRoute,) {
     this.products = productService.getProducts();
     this.sortedProducts = [...this.products];
   }
@@ -42,4 +44,11 @@ export class HomeComponent {
     );
   }
 
+  ngOnInit(): void {
+    const idParam = this.route.snapshot.paramMap.get('id');
+    if (idParam !== null) {
+      const productId = +idParam;
+      this.product = this.productService.getProductById(productId);
+    }
+  }
 }
