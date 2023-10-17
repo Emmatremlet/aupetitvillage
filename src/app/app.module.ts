@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ProductsComponent } from './products/products.component';
 import { AproposComponent } from './apropos/apropos.component';
 import { ContactComponent } from './contact/contact.component';
 import { FicheProduitComponent } from './fiche-produit/fiche-produit.component';
@@ -15,7 +14,6 @@ import { FicheProduitComponent } from './fiche-produit/fiche-produit.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductsComponent,
     AproposComponent,
     ContactComponent,
     FicheProduitComponent

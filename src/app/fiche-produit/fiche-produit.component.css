@@ -3,16 +3,70 @@
 }
 
 h1 {
-    padding: 30px;
+    padding: 0 70px;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
 h2 {
-    padding: 30px;
+    padding: 10px;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
 h3 {
+    font-size: 30px;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+.image {
+    padding: 10px;
+    width: 400px;
+    height:650px;
+    border-radius: 50px;
+}
+
+.title-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.produit {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 40px;
+    padding: 60px;
+}
+
+.panier {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #DA001E;
+    color: #FDD90B;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left:70%;
+    margin :  40px 0;
+}
+
+.details-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 780px;
+    border: solid;
     padding: 30px;
-    font-family: "Bubbleboddy neue", sans-serif;
+    box-shadow: 10px 5px 5px red;
+}
+
+.description {
+    width: 500px;
+    padding-right: 60px;
 }
