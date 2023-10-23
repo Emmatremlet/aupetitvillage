@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Product } from './product.model';
 import { ProductService } from './products.service';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -21,10 +22,12 @@ export class AppComponent {
   products: Product[];
 
   product: Product | undefined;
-  
 
-  constructor(private productService: ProductService, private route: ActivatedRoute) {
+  activeTab: string = 'accueil';
+
+  constructor(private productService: ProductService, private route: ActivatedRoute, private router: Router) {
     this.products = productService.getProducts();
+
   }
 
   ngOnInit(): void {
@@ -33,5 +36,11 @@ export class AppComponent {
       const productId = +idParam;
       this.product = this.productService.getProductById(productId);
     }
+  }
+  isActive(tabName: string): boolean {
+    return this.activeTab === tabName;
+  }
+  changeActiveTab(tabName: string): void {
+    this.activeTab = tabName;
   }
 }

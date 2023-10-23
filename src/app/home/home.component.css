@@ -20,23 +20,19 @@ h3 {
     color: #151217;
 }
 
-.home-description {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
 .image-description {
     width: 550px;
     padding: 30px;
     border-radius: 200px;
 }
+.notre-entreprise{
+    padding-left: 40px;
+}
 
 .description-entreprise {
-    width: 500px;
+    /* width: 500px; */
     line-height: 30px;
+    padding-left: 40px;
 }
 
 .barre {
@@ -61,19 +57,19 @@ select {
     cursor: pointer;
 }
 
-.tri-recherche {
+/* .tri-recherche {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 50%;
-}
+} */
 
-.div-recherche {
+/* .div-recherche {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 10px;
-}
+} */
 
 .recherche {
     background-color: #f3d840a2;
@@ -116,9 +112,9 @@ select {
     cursor: pointer;
 }
 
-.image-produit {
+/* .image-produit {
     width: 300px;
-}
+} */
 
 .figurine img {
     height: 400px;

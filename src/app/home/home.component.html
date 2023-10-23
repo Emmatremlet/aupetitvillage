@@ -18,13 +18,12 @@
 
     <h2 class="titre-catalogue"> Notre catalogue </h2>
 
-    <div class="tri-recherche">
-        <div class="div-recherche">
-            <input type="text" class="recherche" placeholder="Rechercher par nom" (input)="searchProducts($event)">
-            <img class="loupe" src={{Loupe}} alt="icone de loupe">
+    
+    <div class="tri-recherche row">
+        <div class="div-recherche col-md-3 mx-auto">
+            <input type="text" class="recherche col-md-11 col-sm-11" placeholder="Rechercher par nom" (input)="searchProducts($event)">
         </div>
-
-        <div class="tri" for="sortProducts">
+        <div class="tri col-md-3 mx-auto" for="sortProducts">
             <select style="background-color: #FDD90B; color: #DA001E " class="tri-produits"
                 (change)="sortProducts($event)">
                 <option value="">Choisissez une option</option>
@@ -33,9 +32,10 @@
             </select>
         </div>
     </div>
-    <div class="catalogue">
-        <div class="liste" *ngFor="let product of sortedProducts">
-                <div class="figurine">
+
+    <div class="catalogue row blog justify-content-center">
+        <div class="liste col-lg-3 col-md-4 col-6" *ngFor="let product of sortedProducts">
+                <div class="figurine ">
                     <img src={{product.image}} alt="figurine du monde d'Astérix et d'Obélix" class="image-produit">
                     <h3 class="title-asterix">{{product.name}}</h3>
                     <p class="prix">{{product.price}}€</p>

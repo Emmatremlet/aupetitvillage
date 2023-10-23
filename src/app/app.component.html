@@ -1,5 +1,5 @@
 <div class="main-app">
-  <nav>
+  <!-- <nav>
     <a routerLink="/"><img class="logo" src={{logo}} alt="Chapeau d'astérix avec au dessus le nom de l'entreprise"></a>
     <div class="lien">
       <a class="router" routerLink="/">Accueil</a>
@@ -10,43 +10,67 @@
       <img class="compte" src={{compte}} alt="icone d'astérix">
       <img class="panier" src={{panier}} alt="icone d'un panier">
     </div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a routerLink="/"><img class="logo" src={{logo}}
+          alt="Chapeau d'astérix avec au dessus le nom de l'entreprise"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/apropos">A propos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <router-outlet></router-outlet>
 
   <br>
   <br>
-
   <div class="footer">
-    <div class="infos">
-      <h4>Au Petit Village</h4>
-      <p class="adresse-postale">40 rue Laure Diebold <br />
-        69009 Lyon, France <br />
-        Téléphone : 06 20 30 40 50
-      </p>
-      <div class="social-networks">
-        <a class="lien-social-networks" href="https://github.com/Emmatremlet">
-          <img src={{Instagram}} alt="icône Instagram" class="instagram" />
-        </a>
-        <a class="lien-social-networks" href="https://twitter.com/emmatremlet">
-          <img src={{Linkedin}} alt="Icône Linkedin" class="linkedin" />
-        </a>
-        <a class="lien-social-networks" href="https://www.aedin.com/in/emma-tremlet/">
-          <img src={{Facebook}} alt="Icône facebook" class="facebook" />
-        </a>
+    <div class="column row justify-content-center mx-auto">
+      <div class="infos col-lg-3 col-10">
+        <h4>Au Petit Village</h4>
+        <p class="adresse-postale">40 rue Laure Diebold <br />
+          69009 Lyon, France <br />
+          Téléphone : 06 20 30 40 50
+        </p>
+        <div class="social-networks">
+          <a class="lien-social-networks" href="https://github.com/Emmatremlet">
+            <img src={{Instagram}} alt="icône Instagram" class="instagram" />
+          </a>
+          <a class="lien-social-networks" href="https://twitter.com/emmatremlet">
+            <img src={{Linkedin}} alt="Icône Linkedin" class="linkedin" />
+          </a>
+          <a class="lien-social-networks" href="https://www.aedin.com/in/emma-tremlet/">
+            <img src={{Facebook}} alt="Icône facebook" class="facebook" />
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="link">
-      <h4>Liens utiles</h4>
-      <a class="lien-page" routerLink="/">Accueil</a><br />
-      <a class="lien-page" routerLink="/apropos">À propos</a><br />
-      <a class="lien-page" routerLink="/contact">Me contacter</a><br />
-      <a class="lien-page" routerLink="/mentionslegales">Mentions légales</a><br />
-    </div>
-    <div class="categories">
-      <h4>Catégories figurines</h4>
-      <div *ngFor="let product of products">
-        <a class="lien-categories" routerLink="/ficheproduit/{{product.id}}">{{ product.name }}</a>
+      <div class="link col-lg-3 col-10">
+        <h4>Liens utiles</h4>
+        <a class="lien-page" routerLink="/">Accueil</a><br />
+        <a class="lien-page" routerLink="/apropos">À propos</a><br />
+        <a class="lien-page" routerLink="/contact">Me contacter</a><br />
+        <a class="lien-page" routerLink="/mentionslegales">Mentions légales</a><br />
+      </div>
+      <div class="categories col-lg-3 col-10">
+        <h4>Catégories figurines</h4>
+        <div *ngFor="let product of products">
+          <a class="lien-categories" routerLink="/ficheproduit/{{product.id}}">{{ product.name }}</a>
+        </div>
       </div>
     </div>
   </div>

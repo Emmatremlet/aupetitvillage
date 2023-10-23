@@ -17,7 +17,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     AproposComponent,
     ContactComponent,
-    FicheProduitComponent
+    FicheProduitComponent,
   ],
   imports: [
     BrowserModule,

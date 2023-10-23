@@ -41,13 +41,13 @@ h4 {
 }
 
 
-nav {
-    background-color: #ffd90b;
+.navbar {
+    background-color: #ffd90b !important; 
     padding: 5px 60px;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .logo {
@@ -59,12 +59,16 @@ nav {
     cursor: pointer;
 }
 
-.router {
-    padding: 0 30px;
+.nav-link {
+    padding: 30px !important;
     color: #151217;
     text-decoration: none;
     font-size: 20px;
 }
+
+/* .collapse{
+    padding-left: 400px; 
+} */
 
 .router:hover {
     cursor: pointer;
@@ -99,10 +103,6 @@ nav {
     cursor: pointer;
 }
 
-p {
-    width: 110px;
-}
-
 a:hover {
     text-decoration: underline;
     opacity: 0.5;
@@ -112,12 +112,7 @@ a:hover {
 .footer {
     background-color: #151217;
     color: white;
-    padding: 10px 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: top;
-    gap: 100px;
+    padding: 10px 90px;
 }
 
 .footer img {
@@ -131,11 +126,10 @@ a:hover {
 }
 
 .infos {
-    width: 30%;
     text-align: left;
     line-height: 30px;
     margin: 0;
-    padding: 0;
+    padding-bottom: 20px;
 }
 
 .social-networks {
@@ -152,25 +146,26 @@ a:hover {
 .lien-page {
     color: white;
     text-decoration: none;
+
 }
 
 .link {
-    width: 30%;
-    margin-left: 0;
+    margin-left: 30px;
     padding-left: 0;
     color: white;
     text-align: left;
     text-decoration: none;
     line-height: 30px;
+    padding-bottom: 20px;
 }
 
 
 .categories {
-    width: 30%;
     text-align: left;
     text-decoration: none;
     color: white;
     line-height: 30px;
+    padding-bottom: 20px;
 }
 
 .copyright {
@@ -183,13 +178,11 @@ a:hover {
 }
 
 .lien-copyright {
-    margin: 40%;
-    text-align: center;
+    margin: 40px;
     color: #151217;
     text-decoration: none;
 }
 
 .adresse-postale {
     text-align: left;
-    width: 500px;
 }
