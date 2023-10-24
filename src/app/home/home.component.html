@@ -18,10 +18,11 @@
 
     <h2 class="titre-catalogue"> Notre catalogue </h2>
 
-    
-    <div class="tri-recherche row">
-        <div class="div-recherche col-md-3 mx-auto">
-            <input type="text" class="recherche col-md-11 col-sm-11" placeholder="Rechercher par nom" (input)="searchProducts($event)">
+
+    <div class="tri-recherche row justify-content-center mx-auto">
+        <div class="div-recherche col-md-3">
+            <input type="text" class="recherche col-md-11 col-sm-11" placeholder="Rechercher par nom"
+                (input)="searchProducts($event)">
         </div>
         <div class="tri col-md-3 mx-auto" for="sortProducts">
             <select style="background-color: #FDD90B; color: #DA001E " class="tri-produits"
@@ -34,17 +35,14 @@
     </div>
 
     <div class="catalogue row blog justify-content-center">
-        <div class="liste col-lg-3 col-md-4 col-6" *ngFor="let product of sortedProducts">
-                <div class="figurine ">
-                    <img src={{product.image}} alt="figurine du monde d'Astérix et d'Obélix" class="image-produit">
-                    <h3 class="title-asterix">{{product.name}}</h3>
-                    <p class="prix">{{product.price}}€</p>
-                    <a routerLink="/ficheproduit/{{product.id}}" class="div-voir">
-                        <button class="voir">
-                            Voir plus
-                        </button>
-                    </a>
-                </div>
+        <div class="card figurine" style="width: 25rem;" *ngFor="let product of sortedProducts">
+            <img src={{product.image}} class="card-img-top image-produit col-lg-3 col-md-4 col-6"
+                alt="figurine du monde d'Astérix et d'Obélix">
+            <div class="card-body">
+                <h5 class="card-title title-asterix">{{product.name}}</h5>
+                <p class="card-text prix">{{product.price}}€</p>
+                <a class="btn btn-danger div-voir" routerLink="/ficheproduit/{{product.id}}"> Voir plus </a>
+            </div>
         </div>
     </div>
 </div>

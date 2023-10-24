@@ -30,7 +30,6 @@ h3 {
 }
 
 .description-entreprise {
-    /* width: 500px; */
     line-height: 30px;
     padding-left: 40px;
 }
@@ -57,25 +56,18 @@ select {
     cursor: pointer;
 }
 
-/* .tri-recherche {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 50%;
-} */
-
-/* .div-recherche {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 10px;
-} */
+.tri-recherche{
+    width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .recherche {
     background-color: #f3d840a2;
+    margin : 30px 0;
     padding: 5px;
     width: 230px;
-    height: 20px;
+    height: 25px;
     border-radius: 10px;
     border: solid;
     border-color: #DA001E;
@@ -96,12 +88,6 @@ select {
 .catalogue {
     cursor: default;
     margin-top: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    flex-basis: auto;
-    align-items: baseline;
 }
 
 .liste a {
@@ -110,57 +96,34 @@ select {
 
 .figurine {
     cursor: pointer;
-}
-
-/* .image-produit {
-    width: 300px;
-} */
-
-.figurine img {
-    height: 400px;
-}
-
-.figurine {
+    margin: 70px;
     cursor: default !important;
     background-color: #fce3c9;
     text-decoration: none;
-    max-width: 400px;
     font-size: 18px;
     padding: 20px;
     border: solid;
     border-color: #FDD90B;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    flex-basis: auto;
 }
+
+.image-produit {
+    width: 100%;
+}
+
+.figurine img {
+    height: 400px;
+    padding: 10px;
+}
+
 
 .figurine:hover {
     box-shadow: 7px 7px 10px 1px #da001d41;
     cursor: pointer;
 }
 
-.div-voir {
-    margin: auto;
-}
-
-.voir {
-    cursor: pointer;
-    background-color: #DA001E;
-    color: #FDD90B;
-    box-shadow: none;
-    border: none;
-    font-size: 16px;
-    margin-top: 30px;
-    height: 30px;
-    width: 80px;
-    border-radius: 10px;
-}
 
 .prix {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 20px 0;
     color: #151217;
 }
