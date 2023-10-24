@@ -1,34 +1,29 @@
 
-<div class="main-contact">
+<div class="main-contact col-10 col-sm-10 justify-content-center text-center">
     <h1>Contactez-nous !</h1>
-
-    <form [formGroup]="contactForm" (ngSubmit)="sendEmail($event)" method="post" class="contact_form">
-        <div class="id">
-            <div class="first-name">
-                <label for="first-name_box" class="first-name_label">Prénom :</label>
-                <input type="text" class="first-name_box" name="firstName" formControlName="firstname" placeholder="Votre prénom" required>
+    <form [formGroup]="contactForm" (ngSubmit)="sendEmail($event)" method="post" class="contact_form col-10 col-sm-12 col-lg-12 mx-auto">
+        <div class="id row ">
+            <div class="first-name col-6 col-sm-6 col-lg-6">
+                <input type="text" class="first-name_box col-12 col-sm-12 col-lg-12" name="firstName" formControlName="firstname" placeholder="Votre prénom" required>
             </div>
-            <div class="last-name">
-                <label for="last-name_box" id="last-name_label">Nom :</label>
-                <input type="text" class="last-name_box" name="lastName" formControlName="lastname" placeholder="Votre nom" required>
+            <div class="last-name col-6 col-sm-6 col-lg-6">
+                <input type="text" class="last-name_box col-12 col-sm-12 col-lg-12" name="lastName" formControlName="lastname" placeholder="Votre nom" required>
             </div>
         </div>
         <div class="email">
-            <label for="email_box" class="email_label">Adresse e-mail :</label>
-            <input type="email" class="email_box" name="email" formControlName="email" placeholder="Votre email" key="email-input" required>
+            <input type="email" class="email_box col-12 col-sm-12 col-lg-12" name="email" formControlName="email" placeholder="Votre email" key="email-input" required>
         </div>
         <div class="object">
-            <label for="object_box" class="object_label"> Objet :</label>
-            <input type="text" class="object_box" name="object" formControlName="object" placeholder="Le sujet de votre message" required>
+            <input type="text" class="object_box col-12 col-sm-12 col-lg-12" name="object" formControlName="object" placeholder="Le sujet de votre message" required>
         </div>
         <div class="comments_block">
-            <label class="comments_label" for="comments">Commentaire : </label>
-            <span class="comments-max">Max. 500 caractères</span>
-            <textarea class="comments" name="comments" formControlName="comments" placeholder="Votre message" rows="4" maxlength="500"
+            <textarea class="comments col-12 col-sm-12 col-lg-12" name="comments" formControlName="comments" placeholder="Votre message" rows="4" maxlength="500"
                 required></textarea>
         </div>
-        <div class="submit_block">
-            <button type="submit" class="submit">
+        
+        <div class="submit_block row ">
+            <div class="space col-10 col-md-10 col-lg-10"></div>
+            <button type="submit" class="submit btn btn-danger col-2 col-md-2 col-lg-2">
                 Envoyer
             </button>
         </div>

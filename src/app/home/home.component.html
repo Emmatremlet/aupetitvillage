@@ -20,29 +20,33 @@
 
 
     <div class="tri-recherche row justify-content-center mx-auto">
-        <div class="div-recherche col-md-3">
-            <input type="text" class="recherche col-md-11 col-sm-11" placeholder="Rechercher par nom"
-                (input)="searchProducts($event)">
+        <div class=" col-md-6 d-flex justify-content-center">
+            <div class="div-recherche col-md-6">
+                <input type="text" class="recherche col-md-11 col-sm-11" placeholder="Rechercher par nom"
+                    (input)="searchProducts($event)">
+            </div>
         </div>
-        <div class="tri col-md-3 mx-auto" for="sortProducts">
-            <select style="background-color: #FDD90B; color: #DA001E " class="tri-produits"
-                (change)="sortProducts($event)">
-                <option value="">Choisissez une option</option>
-                <option value="asc">Tri croissant</option>
-                <option value="desc">Tri décroissant</option>
-            </select>
+        <div class="col-md-6 d-flex justify-content-center">
+            <div class="tri col-md-6" for="sortProducts">
+                <select style="background-color: #FDD90B; color: #DA001E " class="tri-produits"
+                    (change)="sortProducts($event)">
+                    <option value="">Choisissez une option</option>
+                    <option value="asc">Tri croissant</option>
+                    <option value="desc">Tri décroissant</option>
+                </select>
+            </div>
         </div>
     </div>
+</div>
 
-    <div class="catalogue row blog justify-content-center">
-        <div class="card figurine" style="width: 25rem;" *ngFor="let product of sortedProducts">
-            <img src={{product.image}} class="card-img-top image-produit col-lg-3 col-md-4 col-6"
-                alt="figurine du monde d'Astérix et d'Obélix">
-            <div class="card-body">
-                <h5 class="card-title title-asterix">{{product.name}}</h5>
-                <p class="card-text prix">{{product.price}}€</p>
-                <a class="btn btn-danger div-voir" routerLink="/ficheproduit/{{product.id}}"> Voir plus </a>
-            </div>
+<div class="catalogue row blog justify-content-center">
+    <div class="card figurine" style="width: 25rem;" *ngFor="let product of sortedProducts">
+        <img src={{product.image}} class="card-img-top image-produit col-lg-3 col-md-4 col-6"
+            alt="figurine du monde d'Astérix et d'Obélix">
+        <div class="card-body">
+            <h5 class="card-title title-asterix">{{product.name}}</h5>
+            <p class="card-text prix">{{product.price}}€</p>
+            <a class="btn btn-danger div-voir" routerLink="/ficheproduit/{{product.id}}"> Voir plus </a>
         </div>
     </div>
 </div>

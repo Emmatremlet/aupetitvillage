@@ -36,8 +36,19 @@ h3 {
 
 }
 
+.image-choix {
+    width: 500px;
+}
+
 .description-choix {
     width: 700px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .choix {
@@ -49,19 +60,19 @@ h3 {
     gap: 50px;
 }
 
-.contact{
+.contact {
     margin: 60px 0;
-    padding:20px;
+    padding: 20px;
     padding-bottom: 10px;
     width: 600px;
     text-align: center;
-    margin : 0 auto;
+    margin-right: 50px;
     border: solid;
-    border-color:#DA001E;
+    border-color: #DA001E;
 
 }
 
-.page-contact{
+.page-contact {
     cursor: pointer;
     background-color: #DA001E;
     color: #FDD90B;
@@ -70,11 +81,10 @@ h3 {
     font-size: 16px;
     margin-top: 30px;
     height: 30px;
-    width: 150px;
+    width: 200px;
     border-radius: 10px;
 }
 
-.bloc-remiercement{
+.bloc-remiercement {
     margin: 60px 0;
 }
-
