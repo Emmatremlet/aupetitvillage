@@ -11,7 +11,7 @@ h1 {
 
 h2 {
     padding-bottom: 20px;
-    font-size: 35px;
+    font-size: 40px;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
@@ -30,8 +30,23 @@ h3 {
     padding-left: 40px;
 }
 
+@media (min-width: 900px) {
+    .description {
+        padding-top: 100px;
+        padding-right: 90px;
+        line-height: 4em;
+    }
+}
+
+@media (max-width: 900px){
+    .description{
+        line-height: 4em;
+    }
+}
+
 .description-entreprise {
-    line-height: 30px;
+    font-size: 28px;
+    /* line-height: 30px; */
     padding-left: 40px;
 }
 
@@ -46,7 +61,7 @@ h3 {
 
 .titre-catalogue {
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
     margin: 40px 0;
 }
 

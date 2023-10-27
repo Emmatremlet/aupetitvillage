@@ -12,6 +12,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent {
 
   contactForm: FormGroup;
+  logo: any = "../assets/logo.png";
 
   constructor(private formBuilder: FormBuilder) {
     this.contactForm = this.formBuilder.group({

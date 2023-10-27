@@ -12,6 +12,8 @@
     font-family: "Comfortaa", sans-serif;
     text-decoration: none !important;
     color: #151217;
+    font-size: 25px;
+    line-height: 2em;
 }
 
 h1 {
@@ -35,23 +37,15 @@ h3 {
 h4 {
     padding: 0;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 35px;
     text-decoration: none;
     font-family: "Bubbleboddy neue", sans-serif;
 }
 
 
 .navbar {
-    background-color: #ffd90b !important; 
+    background-color: #ffd90b !important;
     padding: 5px 60px;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; */
-}
-
-.logo {
-    width: 80px;
 }
 
 .logo:hover {
@@ -60,15 +54,23 @@ h4 {
 }
 
 .nav-link {
-    padding: 30px !important;
+    padding-left: 70px !important;
     color: #151217;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 35px;
 }
 
-/* .collapse{
-    padding-left: 400px; 
-} */
+@media (min-width:700px) {
+    .collapse {
+        padding-left: 600px;
+    }
+}
+
+@media (min-width:500px) and (max-width:750px) {
+    .collapse {
+        padding-left: 100px;
+    }
+}
 
 .router:hover {
     cursor: pointer;
@@ -80,7 +82,7 @@ h4 {
     display: flex;
     flex-direction: row;
     padding-right: 20px;
-    width: 100px;
+    width: 130px;
 }
 
 .panier {
@@ -172,15 +174,18 @@ a:hover {
     background-color: white;
     color: white;
     padding: 20px;
-    border:solid;
-    border-color:#151217;
+    border: solid;
+    border-color: #151217;
     border-width: 2px;
 }
 
 .lien-copyright {
+    text-align: center;
     margin: 40px;
     color: #151217;
     text-decoration: none;
+    display: block;
+    margin: 0 auto;
 }
 
 .adresse-postale {
