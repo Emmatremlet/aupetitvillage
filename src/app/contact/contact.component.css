@@ -19,11 +19,32 @@ button {
 
 .contact_form {
     margin: 70px auto;
+    padding-top: 100px;;
     line-height: 4;
+    
 }
 
-.logo {
-    height: 850px;
+@media(min-width: 1200px){
+    .logo {
+        height: 600px;
+        margin-left:100px;
+        margin-top: 200px;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1200px) {
+    .logo {
+        height: 350px;
+        margin-left:100px;
+        margin-top: 200px;
+    }
+}
+
+
+@media (max-width : 1000px) {
+    .logo {
+        display: none;
+    }
 }
 
 .submit {

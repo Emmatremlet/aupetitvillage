@@ -1,28 +1,28 @@
 <h1>Contactez-nous !</h1>
 
 <div class="main-contact row justify-content-center mx-auto">
-    <img class="logo col-10 col-sm-5" src={{logo}}
+    <img class="logo col-0 col-sm-4" src={{logo}}
             alt="Logo de au petit village avec le casque ailé d'Astérix et le nom de l'entreprise au dessus">
     <form [formGroup]="contactForm" (ngSubmit)="sendEmail($event)" method="post"
-        class="contact_form col-10 col-sm-5">
+        class="contact_form col-12 col-sm-5">
         <div class="first-name">
-            <input type="text" class="first-name_box col-6 col-sm-6 col-lg-6" name="firstName"
+            <input type="text" class="first-name_box col-12 col-sm-12 col-lg-12" name="firstName"
                 formControlName="firstname" placeholder="Votre prénom" required>
         </div>
         <div class="last-name">
-            <input type="text" class="last-name_box col-6 col-sm-6 col-lg-6" name="lastName"
+            <input type="text" class="last-name_box col-12 col-sm-12 col-lg-12" name="lastName"
                 formControlName="lastname" placeholder="Votre nom" required>
         </div>
         <div class="email">
-            <input type="email" class="email_box col-6 col-sm-6 col-lg-6" name="email" formControlName="email"
+            <input type="email" class="email_box col-12 col-sm-12 col-lg-12" name="email" formControlName="email"
                 placeholder="Votre email" key="email-input" required>
         </div>
         <div class="object">
-            <input type="text" class="object_box col-6 col-sm-6 col-lg-6" name="object" formControlName="object"
+            <input type="text" class="object_box col-12 col-sm-12 col-lg-12" name="object" formControlName="object"
                 placeholder="Le sujet de votre message" required>
         </div>
         <div class="comments_block">
-            <textarea class="comments col-6 col-sm-6 col-lg-6" name="comments" formControlName="comments"
+            <textarea class="comments col-12 col-sm-12 col-lg-12" name="comments" formControlName="comments"
                 placeholder="Votre message" rows="4" maxlength="500" required></textarea>
         </div>
 

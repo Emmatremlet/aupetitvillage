@@ -60,18 +60,6 @@ h4 {
     font-size: 35px;
 }
 
-@media (min-width:700px) {
-    .collapse {
-        padding-left: 600px;
-    }
-}
-
-@media (min-width:500px) and (max-width:750px) {
-    .collapse {
-        padding-left: 100px;
-    }
-}
-
 .router:hover {
     cursor: pointer;
     text-decoration: underline;
