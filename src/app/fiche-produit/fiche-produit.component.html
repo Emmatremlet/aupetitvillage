@@ -1,22 +1,24 @@
 <div class="main-fiche-produit">
     <h1 class="fiche-produit">Fiche produit</h1>
-    <div class="produit">
-
-        <img class="image" src={{product?.image}} alt="figurine du monde d'Astérix et d'Obélix">
-
-        <div class="details">
+    <div class="produit row">
+        <div class="image-title">
+            <img class="image" src={{product?.image}} alt="figurine du monde d'Astérix et d'Obélix">
             <div class="title-price">
                 <h2 class="title-produit">{{ product?.name }}</h2>
                 <h3 class="price">{{ product?.price }} €</h3>
+                <button class="btn btn-danger panier">Ajouter au panier</button>
             </div>
-            <button class="panier">Ajouter au panier</button>
-            <div class="details-description">
-                <p class="description"><strong>Description :</strong> {{ product?.description }}</p>
-                <div class="details-figurine">
-                    <p class="materiau"><strong>Matériau :</strong> {{ product?.materiau }}</p>
-                    <p class="hauteur"><strong>Hauteur :</strong> {{ product?.hauteur }}</p>
-                    <p class="disponibilite"><strong>Disponibilité :</strong> {{ product?.disponibilite }}</p>
-                </div>
+        </div>
+
+        <div class="details-description row">
+            <div class="col-12 col-md-6">
+                <p class="description"><strong>Description</strong> : {{
+                    product?.description }}</p>
+            </div>
+            <div class="details-figurine col-12 col-md-4">
+                <p class="materiau"><strong>Matériau</strong> : {{ product?.materiau }}</p>
+                <p class="hauteur"><strong>Hauteur</strong> : {{ product?.hauteur }}</p>
+                <p class="disponibilite"><strong>Disponibilité</strong> : {{ product?.disponibilite }}</p>
             </div>
         </div>
     </div>
